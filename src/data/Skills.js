@@ -1,58 +1,81 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGithub,
+  FaGit,
+  FaNodeJs,
+  FaAws,
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { SiNestjs } from "react-icons/si";
+import { SiTypescript, SiNestjs, SiExpress } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaGithub } from "react-icons/fa";
 
-export const tools = [
+export const expertise = [
   {
-    title: "HTML",
+    title: "html",
     icon: FaHtml5,
-    proficiency: 100
+    bgColor: "#f06529",
+    iconColor: "#ffffff",
   },
   {
-    title: "CSS",
+    title: "css",
     icon: FaCss3Alt,
-    proficiency: 85
+    bgColor: "#2965f1",
+    iconColor: "#ffffff",
   },
   {
-    title: "GITHUB",
+    title: "git",
+    icon: FaGit,
+    bgColor: "#f34f29", 
+    iconColor: "#ffffff", 
+  },
+  {
+    title: "gitHub",
     icon: FaGithub,
-    proficiency: 100
+    bgColor: "#333333",
+    iconColor: "#ffffff",
   },
-];
-
-export const frameWorks = [
   {
-    title: "NEST",
+    title: "nestJS",
     icon: SiNestjs,
-    proficiency: 45
+    bgColor: "#e0234e", 
+    iconColor: "#ffffff", 
   },
-
   {
-    title: "REACT",
+    title: "react",
     icon: FaReact,
-    proficiency: 70
+    bgColor: "#61dafb", 
+    iconColor: "#20232a", 
   },
   {
-    title: "TAILWIND",
+    title: "tailwindCSS",
     icon: RiTailwindCssFill,
-    proficiency: 85
+    bgColor: "#38bdf8", 
+    iconColor: "#ffffff",
   },
-];
-
-export const languages = [
   {
-    title: "JAVASCRIPT",
+    title: "javaScript",
     icon: IoLogoJavascript,
-    proficiency: 80
+    bgColor: "#f7df1e", 
+    iconColor: "#000000", 
   },
   {
-    title: "TYPESCRIPT",
+    title: "typeScript",
     icon: SiTypescript,
-    proficiency: 65
+    bgColor: "#007acc", 
+    iconColor: "#ffffff", 
+  },
+  {
+    title: "express",
+    icon: SiExpress,
+    bgColor: "#000000", 
+    iconColor: "#ffffff", 
+  },
+  {
+    title: "node.js",
+    icon: FaNodeJs,
+    bgColor: "#539e43", 
+    iconColor: "#ffffff", 
   },
 ];

@@ -13,7 +13,9 @@ const Skills = () => {
         Below are some of the tools, frameworks, and programming languages I am
         proficient in
       </p>
-      <SkillsCard/>
+      <div>
+        <SkillsCard />
+      </div>
     </div>
   );
 };

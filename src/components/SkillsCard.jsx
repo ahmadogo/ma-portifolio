@@ -1,52 +1,22 @@
-import React from 'react';
-import { tools, frameWorks, languages } from '../data/Skills';
-import ProgressCard from './ProgressCard';
+import React from "react";
+import { expertise } from "../data/Skills";
 
 const SkillsCard = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-      {/* Tools strength */}
-      <div className='mt-10 shadow-xl p-5'>
-        <h2 className='text-2xl font-bold text-gray-900'>Tools</h2>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-12 mt-5'>
-          {tools.map((tool) => (
-            <ProgressCard
-              key={tool.index}
-              icon={tool.icon}
-              proficiency={tool.proficiency}
-              
-            />
-          ))}
-        </div>
+    <div className='mt-5'>
+      <div className='w-[60%] grid grid-cols-3'>
+        {expertise.map((skill, index) => (
+          <div
+            key={index}
+            className='flex  items-center rounded-sm mt-1 gap-2 px-2'
+            style={{ backgroundColor: skill.bgColor }}
+          >
+            <p style={{ color: skill.iconColor }}>{skill.title}</p>
+            <skill.icon style={{ color: skill.iconColor }} />
+          </div>
+        ))}
       </div>
-
-      {/* Languages strength */}
-      <div className='mt-10 shadow-xl p-5'>
-        <h2 className='text-2xl font-bold text-[#3b82f6]'>Languages</h2>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-12 mt-5'>
-          {languages.map((language) => (
-            <ProgressCard
-              key={language.index}
-              icon={language.icon}
-              proficiency={language.proficiency}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Frameworks strengths */}
-      <div className='mt-10 shadow-xl p-5'>
-        <h2 className='text-2xl font-bold text-gray-900'>Frameworks</h2>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-12 mt-5'>
-          {frameWorks.map((framework) => (
-            <ProgressCard
-              key={framework.index}
-              icon={framework.icon}
-              proficiency={framework.proficiency}
-            />
-          ))}
-        </div>
-      </div>
+      
     </div>
   );
 };

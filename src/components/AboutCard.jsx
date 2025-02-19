@@ -7,6 +7,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const AboutCard = () => {
   return (
     <div className='mt-28 grid grid-cols-1 md:grid-cols-3 gap-4'>
+      
       <div className='col-span-1  flex justify-center items-center bg-slate-100 rounded-lg'>
         <MdPerson className='text-[250px] text-gray-800' />
         {/* <img src={ak} alt="a.k image" className="w-[60%] h-[50%]" /> */}
@@ -33,6 +34,7 @@ const AboutCard = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };
